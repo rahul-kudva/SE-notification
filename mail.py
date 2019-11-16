@@ -14,8 +14,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": "krk141298@gmail.com",
-    "MAIL_PASSWORD": "rahul12345"
+    "MAIL_USERNAME": "xyz41607@gmail.com",
+    "MAIL_PASSWORD": "abcxyz12345"
 }
 
 app.config.update(mail_settings)
@@ -38,7 +38,7 @@ def notification():
 	    msg = Message(subject="Hello",
 		              sender=app.config.get("MAIL_USERNAME"),
 		              recipients=["rahulkudva98@gmail.com"], # replace with your email for testing
-		              body="This is a test email I sent with Gmail and Python!")
+		              body="Today is the deadline for your assignment!")
 	    mail.send(msg)
 
 if __name__ == '__main__':
